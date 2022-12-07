@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap");
+:root {
+  --AlmostWhite: hsl(0, 0%, 98%);
+  --MediumGray: hsl(0, 0%, 41%);
+  --AlmostBlack: hsl(0, 0%, 8%);
+  --fontsize: 18px;
+  --fontfamily: "Epilogue", sans-serif;
+}
+
+html body {
+  font-family: var(--fontfamily);
+}
+html body #content #mainarea {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+html body #content #mainarea .leftarea {
+  padding-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 75px;
+}
+html body #content #mainarea .leftarea .textarea .title {
+  text-align: start;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+html body #content #mainarea .leftarea .textarea .text {
+  text-align: start;
+  margin-bottom: 40px;
+}
+html body #content #mainarea .leftarea .textarea .btnarea {
+  text-align: start;
+}
+html body #content #mainarea .leftarea .imgarea div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+html body #content #mainarea .rightarea .imgarea img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 640px;
+}
+html body p {
+  font-size: var(--fontsize);
+}/*# sourceMappingURL=style.css.map */

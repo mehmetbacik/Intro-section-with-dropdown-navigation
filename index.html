@@ -10,13 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/src/bootstrap/js/bootstrap.min.js"></script>
     <link href="/src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon-32x32.png">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img src="/assets/img/logo.svg"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -24,16 +26,24 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown
+                                Company
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -45,32 +55,54 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
                         </li>
                     </ul>
+                    <div>
+                        <a href="#" class="text-black">Login</a>
+                        <a href="#" class="btn btn-outline-dark">Register</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container text-center">
+        <div class="container text-center" id="content">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="col-12">
-                        <section>
-                            1 of 2
+                <div class="col-12" id="mainarea">
+                    <div class="col-12 col-md-6 col-lg-6 leftarea">
+                        <div class="col-12">
+                            <section class="textarea">
+                                <div class="col-12">
+                                    <h1 class="title">Make<br>remote work</h1>
+                                    <p class="text">Get your team in sync, no matter your location. <br>Streamline
+                                        processes, creat team rituals,
+                                        and <br>watch productivity soar.</p>
+                                </div>
+                                <div class="col-12 btnarea">
+                                    <a href="#" class="btn btn-dark">Learn more</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-12">
+                            <section class="imgarea">
+                                <div>
+                                    <img src="/assets/img/client-databiz.svg">
+                                    <img src="/assets/img/client-audiophile.svg">
+                                    <img src="/assets/img/client-meet.svg">
+                                    <img src="/assets/img/client-maker.svg">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 rightarea">
+                        <section class="imgarea">
+                            <img src="/assets/img/image-hero-desktop.png">
                         </section>
                     </div>
-                    <div class="col-12">
-                        <section>
-                            1 of 3
-                        </section>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <section>
-                        2 of 2
-                    </section>
                 </div>
             </div>
         </div>
@@ -79,6 +111,7 @@
 
     </footer>
     <script src="/src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
