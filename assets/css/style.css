@@ -9,9 +9,13 @@
 
 html body {
   font-family: var(--fontfamily);
+  background-color: var(--AlmostWhite);
 }
 html body header #topmenu {
   padding: 20px 30px;
+}
+html body header #topmenu .collapse:not(.open) .dropdown-menu {
+  display: none;
 }
 html body header #topmenu .dropdown-toggle::after {
   content: url(/assets/img/icon-arrow-down.svg);
@@ -25,6 +29,48 @@ html body header #topmenu #navbarSupportedContent ul .nav-link {
   font-size: 13px;
   color: var(--AlmostBlack);
   font-weight: 500;
+  text-shadow: -0.25px -0.25px 0 transparent, 0.25px 0.25px transparent;
+}
+html body header #topmenu #navbarSupportedContent ul .nav-link:hover {
+  text-shadow: -0.25px -0.25px 0 var(--AlmostBlack), 0.25px 0.25px var(--AlmostBlack);
+}
+html body header #topmenu #navbarSupportedContent .dropdown-menu {
+  border: 0;
+  border-radius: 13px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: var(--AlmostBlack);
+}
+html body header #topmenu #navbarSupportedContent .dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  line-height: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  min-height: 29px;
+}
+html body header #topmenu #navbarSupportedContent .dropdown-menu li .todo:before {
+  content: url(/assets/img/icon-todo.svg);
+  min-width: 20px;
+  text-align: center;
+}
+html body header #topmenu #navbarSupportedContent .dropdown-menu li .calendar:before {
+  content: url(/assets/img/icon-calendar.svg);
+  min-width: 20px;
+  text-align: center;
+}
+html body header #topmenu #navbarSupportedContent .dropdown-menu li .reminders:before {
+  content: url(/assets/img/icon-reminders.svg);
+  min-width: 20px;
+  text-align: center;
+}
+html body header #topmenu #navbarSupportedContent .dropdown-menu li .planning:before {
+  content: url(/assets/img/icon-planning.svg);
+  min-width: 20px;
+  text-align: center;
 }
 html body header #topmenu #navbarSupportedContent .loginarea {
   display: flex;
@@ -54,7 +100,7 @@ html body #content #mainarea {
   margin-bottom: 100px;
 }
 html body #content #mainarea .leftarea {
-  padding-right: 100px;
+  padding-right: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +118,7 @@ html body #content #mainarea .leftarea .textarea .title {
 html body #content #mainarea .leftarea .textarea .text {
   text-align: start;
   margin-bottom: 40px;
-  color: var(--AlmostBlack);
+  color: var(--MediumGray);
 }
 html body #content #mainarea .leftarea .textarea .btnarea {
   text-align: start;
@@ -83,6 +129,10 @@ html body #content #mainarea .leftarea .textarea .btnarea .learnmore {
   padding: 10px 25px;
   font-size: var(--fontsize);
 }
+html body #content #mainarea .leftarea .textarea .btnarea .learnmore:hover {
+  background-color: var(--AlmostWhite);
+  color: var(--AlmostBlack);
+}
 html body #content #mainarea .leftarea .imgarea div {
   display: flex;
   align-items: center;
@@ -92,7 +142,7 @@ html body #content #mainarea .rightarea .imgarea img {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 640px;
+  height: 410px;
 }
 html body p {
   font-size: var(--fontsize);
