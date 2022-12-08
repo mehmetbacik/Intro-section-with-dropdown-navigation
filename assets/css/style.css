@@ -10,6 +10,43 @@
 html body {
   font-family: var(--fontfamily);
 }
+html body header #topmenu {
+  padding: 20px 30px;
+}
+html body header #topmenu .dropdown-toggle::after {
+  content: url(/assets/img/icon-arrow-down.svg);
+  vertical-align: inherit;
+  border: 0;
+}
+html body header #topmenu #navbarSupportedContent ul {
+  gap: 30px;
+}
+html body header #topmenu #navbarSupportedContent ul .nav-link {
+  font-size: 13px;
+  color: var(--AlmostBlack);
+  font-weight: 500;
+}
+html body header #topmenu #navbarSupportedContent .loginarea {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+html body header #topmenu #navbarSupportedContent .loginarea .login {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--AlmostBlack);
+  font-weight: 500;
+}
+html body header #topmenu #navbarSupportedContent .loginarea .register {
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+html body header #topmenu .navbar-brand {
+  margin-right: 60px;
+}
 html body #content #mainarea {
   display: flex;
   align-items: flex-end;
@@ -30,13 +67,21 @@ html body #content #mainarea .leftarea .textarea .title {
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
+  color: var(--AlmostBlack);
 }
 html body #content #mainarea .leftarea .textarea .text {
   text-align: start;
   margin-bottom: 40px;
+  color: var(--AlmostBlack);
 }
 html body #content #mainarea .leftarea .textarea .btnarea {
   text-align: start;
+}
+html body #content #mainarea .leftarea .textarea .btnarea .learnmore {
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: var(--fontsize);
 }
 html body #content #mainarea .leftarea .imgarea div {
   display: flex;

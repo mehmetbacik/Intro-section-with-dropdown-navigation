@@ -10,6 +10,49 @@
 html {
     body {
         font-family: var(--fontfamily);
+        header {
+            #topmenu {
+                padding: 20px 30px;
+                .dropdown-toggle {
+                    &::after {
+                        content: url(/assets/img/icon-arrow-down.svg);
+                        vertical-align: inherit;
+                        border: 0;
+                    }
+                }
+                #navbarSupportedContent {
+                    ul {
+                        gap:30px;
+                        .nav-link {
+                            font-size:13px;
+                            color: var(--AlmostBlack);
+                            font-weight: 500;
+                        }
+                    }
+                    .loginarea {
+                        display: flex;
+                        align-items: center;
+                        gap: 50px;
+                        .login {
+                            font-size: 13px;
+                            text-decoration: none;
+                            color: var(--AlmostBlack);
+                            font-weight: 500;
+                        }
+                        .register {
+                            border-radius: 10px;
+                            font-size: 13px;
+                            font-weight: 500;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                .navbar-brand {
+                    margin-right: 60px;
+                }
+            }
+        }
         #content {
             #mainarea {
                 display: flex;
@@ -30,13 +73,21 @@ html {
                             font-weight: bold;
                             line-height: 1;
                             margin-bottom: 40px;
+                            color: var(--AlmostBlack);
                         }
                         .text {
                             text-align: start;
                             margin-bottom: 40px;
+                            color: var(--AlmostBlack);
                         }
                         .btnarea {
                             text-align: start;
+                            .learnmore {
+                                font-weight: 500;
+                                border-radius: 10px;
+                                padding: 10px 25px;
+                                font-size: var(--fontsize);
+                            }
                         }
                     }
                     .imgarea {
