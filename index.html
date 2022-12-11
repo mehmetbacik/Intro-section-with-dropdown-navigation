@@ -25,6 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button type="button" class="btn-close d-lg-none" aria-label="Close"></button>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown dropdownone">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -65,14 +66,14 @@
         </nav>
     </header>
     <main>
-        <div class="container text-center" id="content">
+        <div class="container-lg text-center" id="content">
             <div class="row">
                 <div class="col-12" id="mainarea">
-                    <div class="col-12 col-lg-8 leftarea">
+                    <div class="col-12 col-lg-7 leftarea">
                         <div class="col-12">
                             <section class="textarea">
                                 <div class="col-12">
-                                    <h1 class="title">Make<br>remote work</h1>
+                                    <h1 class="title">Make <br class="d-none d-lg-block">remote work</h1>
                                     <p class="text">Get your team in sync, no matter your location. <br>Streamline
                                         processes, creat team rituals,
                                         and <br>watch productivity soar.</p>
@@ -93,9 +94,10 @@
                             </section>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4 rightarea">
-                        <section class="imgarea">
-                            <img src="/assets/img/image-hero-desktop.png">
+                    <div class="col-12 col-lg-5 rightarea">
+                        <section class="imgarea d-flex justify-content-center">
+                            <img class="d-none d-lg-block" src="/assets/img/image-hero-desktop.png">
+                            <img class="d-block d-lg-none" src="/assets/img/image-hero-mobile.png">
                         </section>
                     </div>
                 </div>

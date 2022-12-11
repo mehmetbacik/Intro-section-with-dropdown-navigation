@@ -20,6 +20,13 @@ html {
                     }
                 }
                 .dropdown-toggle {
+                    &.show {
+                        &::after {
+                            content: url(/assets/img/icon-arrow-up.svg);
+                            vertical-align: inherit;
+                            border: 0;
+                        }
+                    }
                     &::after {
                         content: url(/assets/img/icon-arrow-down.svg);
                         vertical-align: inherit;
@@ -146,7 +153,6 @@ html {
                                 font-weight: 500;
                                 border-radius: 10px;
                                 padding: 10px 25px;
-                                font-size: var(--fontsize);
                                 &:hover {
                                     background-color: var(--AlmostWhite);
                                     color: var(--AlmostBlack);
@@ -167,7 +173,7 @@ html {
                         img {
                             max-width: 100%;
                             object-fit: cover;
-                            height: 410px;
+                            height: 570px;
                         }
                     }
                 }
@@ -179,6 +185,243 @@ html {
     }
 }
 
-@media screen and (max-width: 734px) {
+@media screen and (max-width: 1199px) {
+    html {
+        body {
+            header {
+                #topmenu {
+                    padding: 20px 20px;
+                }
+            }
+            #content {
+                #mainarea {
+                    .leftarea {
+                        .textarea {
+                            .title {
+                                font-size: 70px;
+                            }
+                        }
+                    }
+                    .rightarea {
+                        .imgarea {
+                            img {
+                                height: 520px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
+@media screen and (max-width: 991px) {
+    html {
+        body {
+            header {
+                #topmenu {
+                    #navbarSupportedContent {
+                        ul {
+                            gap:0px;
+                        }
+                        .dropdown-menu {
+                            box-shadow: none;
+                        }
+                        .loginarea {
+                            flex-direction: column;
+                            gap: 20px;
+                            .login {
+                                font-size: 13px;
+                                text-decoration: none;
+                                color: var(--AlmostBlack);
+                                font-weight: 500;
+                            }
+                            .register {
+                                border-radius: 10px;
+                                font-size: 13px;
+                                font-weight: 500;
+                                padding-right: 20px;
+                                padding-left: 20px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .navbar-toggler {
+                        border: 0;
+                        .navbar-toggler-icon {
+                            background-image: url(/assets/img/icon-menu.svg);
+                        }
+                    }
+                }
+                .navbar {
+                    .navbar-collapse {
+                        bottom:0px; 
+                        position:fixed;
+                        right: 0; 
+                        width:65%; 
+                        /*width:calc(100% - 60px);*/
+                        max-width:320px; 
+                        height:auto !important;
+                        background: #fff;
+                        padding:20px;
+                        top: 0px;
+                        .btn-close {
+                            position: relative;
+                            right: 0px;
+                            left: calc(100% - 20px);
+                            background: url(/assets/img/icon-close-menu.svg);
+                            opacity: inherit;
+                        }
+                    }
+                } 
+            }
+            #content {
+                #mainarea {
+                    flex-direction: column-reverse;
+                    margin-top: 0;
+                    .leftarea {
+                        padding-right: 0px;
+                        .textarea {
+                            .title {
+                                text-align: center;
+                                font-size: 50px;
+                                margin-top: 40px;
+                            }
+                            .text {
+                                text-align: center;
+                            }
+                            .btnarea {
+                                text-align: center;
+                            }
+                        }
+                        .imgarea {
+                            div {
+                                justify-content: space-evenly;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 734px) {
+    html {
+        body {
+            header {
+                #topmenu {
+                    padding: 20px 0px;
+                }
+            }
+            #content {
+                #mainarea {
+                    margin-top:0px;
+                    .leftarea {
+                        padding-right: 0px;
+                        gap: 50px;
+                        .textarea {
+                            .title {
+                                font-size: 37px;
+                                margin-bottom: 25px;
+                            }
+                            .text {
+                                font-size: 15px;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        .imgarea {
+                            div {
+                                img {
+                                    width: 65px;
+                                }
+                            }
+                        }
+                    }
+                    .rightarea {
+                        .imgarea {
+                            img {
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html {
+        body {
+            header {
+                #topmenu {
+                    padding: 20px 0px;
+                }
+            }
+            #content {
+                #mainarea {
+                    margin-top:0px;
+                    .leftarea {
+                        .textarea {
+                            .title {
+                                font-size: 35px;
+                            }
+                            .text {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .rightarea {
+                        .imgarea {
+                            img {
+                                height: 260px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        body {
+            header {
+                #topmenu {
+                    padding: 20px 0px;
+                }
+            }
+            #content {
+                #mainarea {
+                    margin-top:0px;
+                    .leftarea {
+                        .textarea {
+                            .title {
+                                font-size: 30px;
+                            }
+                            .text {
+                                font-size: 12px;
+                            }
+                        }
+                        .imgarea {
+                            div {
+                                img {
+                                    width: 55px;
+                                }
+                            }
+                        }
+                    }
+                    .rightarea {
+                        .imgarea {
+                            img {
+                                height: 220px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
