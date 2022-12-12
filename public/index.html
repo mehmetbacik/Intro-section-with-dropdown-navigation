@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Snap</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Intro section with dropdown navigation">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap, Scss">
+    <meta name="author" content="MBCK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/src/bootstrap/js/bootstrap.min.js"></script>
+    <link href="/src/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="topmenu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/assets/img/logo.svg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button type="button" class="btn-close d-lg-none" aria-label="Close"></button>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown dropdownone">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item todo" href="#">Todo List</a></li>
+                                <li><a class="dropdown-item calendar" href="#">Calendar</a></li>
+                                <li><a class="dropdown-item reminders" href="#">Reminders</a></li>
+                                <li><a class="dropdown-item planning" href="#">Planning</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropdowntwo">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Company
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item history" href="#">History</a></li>
+                                <li><a class="dropdown-item team" href="#">Our Team</a></li>
+                                <li><a class="dropdown-item blog" href="#">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                    <div class="loginarea">
+                        <a href="#" class="text-black login">Login</a>
+                        <a href="#" class="btn btn-outline-dark register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-lg text-center" id="content">
+            <div class="row">
+                <div class="col-12" id="mainarea">
+                    <div class="col-12 col-lg-7 leftarea">
+                        <div class="col-12">
+                            <section class="textarea">
+                                <div class="col-12">
+                                    <h1 class="title">Make <br class="d-none d-lg-block">remote work</h1>
+                                    <p class="text">Get your team in sync, no matter your location. <br>Streamline
+                                        processes, creat team rituals,
+                                        and <br>watch productivity soar.</p>
+                                </div>
+                                <div class="col-12 btnarea">
+                                    <a href="#" class="btn btn-dark learnmore">Learn more</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-12">
+                            <section class="imgarea">
+                                <div>
+                                    <img src="/assets/img/client-databiz.svg">
+                                    <img src="/assets/img/client-audiophile.svg">
+                                    <img src="/assets/img/client-meet.svg">
+                                    <img src="/assets/img/client-maker.svg">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 rightarea">
+                        <section class="imgarea d-flex justify-content-center">
+                            <img class="d-none d-lg-block" src="/assets/img/image-hero-desktop.png">
+                            <img class="d-block d-lg-none" src="/assets/img/image-hero-mobile.png">
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
